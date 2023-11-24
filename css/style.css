@@ -1,0 +1,57 @@
+:root {
+  --color-brand: #819b57;
+  --color-brand-dark: #465929;
+  --color-text: #faf4ea;
+  --color-dark: #31261a;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: var(--color-dark);
+}
+
+.button {
+  color: var(--color-text);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand);
+  background-color: var(--color-brand);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.link {
+  color: var(--color-text);
+}
+
+.link:hover {
+  color: var(--color-brand);
+}
+
+.hero-title {
+  color: var(--color-text);
+}
+
+.hero-title .accent {
+  color: var(--color-brand);
+}
+
+.advantages {
+  color: var(--color-text);
+  background-color: var(--color-brand);
+}
+
+.section-title {
+  color: var(--color-dark);
+}
