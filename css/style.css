@@ -56,6 +56,7 @@ ul {
 
 body {
   color: var(--color-dark);
+  background-color: var(--color-text);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -147,6 +148,11 @@ address {
 
 .hero-section {
   padding: 272px 0;
+  /* background-color: burlywood; */
+  background-image: url(/image/1559.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -187,6 +193,10 @@ address {
   line-height: 1.3;
 }
 
+.section-title.centered {
+  text-align: center;
+}
+
 /* tradition section */
 
 .tradition-container {
@@ -214,7 +224,6 @@ address {
 
 .tradition-text .uppercase {
   text-transform: uppercase;
-}
 
 .tradition-text.limited {
   max-width: 340px;
@@ -223,7 +232,28 @@ address {
 /* chefs section*/
 
 .title-shef {
-  margin-bottom: 80px;
+  min-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.accent {
+  color: var(--color-brand);
+}
+
+.image-chef {
+  border-radius: 4px 4px 4px 200px;
+  background: #d9d9d9;
+  box-shadow: -16px 16px 0 0 var(--color-text), -16px 16px 0 2px #a18268;
+}
+
+.title-shef::before,
+.title-shef::after {
+  display: block;
+  width: 352px;
+  /* height: 2px;
+  background: #CFCFBC; */
+  border: 2px solid #cfcfbc;
+  content: "";
 }
 
 .chef-title {
@@ -249,9 +279,21 @@ address {
 }
 
 .format {
+  height: 444px;
   border-radius: 5px;
   border: 1px solid grey; /* remove */
   padding: 24px;
+  /* background-image: url(../image/bake1.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+
+  box-shadow: 2px -2px 4px 4px var(--color-dark);
 }
 
 .formats-list {
@@ -270,6 +312,15 @@ address {
 }
 
 /* footer */
+
+.footer {
+  background-color: var(--color-dark);
+  background-image: url(../image/1564.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .adress-link {
   color: var(--color-text);
   font-size: 16px;
